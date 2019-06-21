@@ -1,12 +1,12 @@
 import request from '@/utils/request';
 
-export function login(data) {
-  return request({
-    url: '/user/login',
-    method: 'post',
-    data
-  });
-}
+// export function login(data) {
+//   return request({
+//     url: '/user/login',
+//     method: 'post',
+//     data
+//   });
+// }
 
 export function getInfo(token) {
   return request({
@@ -23,17 +23,10 @@ export function logout() {
   });
 }
 // ------------------------------------------------
-export function doLogin(data) {
+export function login(data) {
   return request({
-    url: '/indexV2',
-    method: 'post'
-    // params: {  }
+    url: '/login',
+    method: 'post',
+    data
   });
 }
-// export function doLogin(data) {
-//   return request({
-//     url: '/doLogin',
-//     method: 'post',
-//     data
-//   });
-// }
